@@ -14,7 +14,7 @@ const colors = {
     Fat: "#F5A623",
 }
 const NutritionRings = ({
-    goal, 
+    goal,
     eaten,
     type
 }: Props) => {
@@ -25,18 +25,12 @@ const NutritionRings = ({
         { value: remaining, color: "#EFEFEF" },  // remaining (grey)
     ];
 
-    // const macroData = [
-    //     { value: protein, color: "#F25F5C", label: "Protein" },
-    //     { value: carbs, color: "#70C1B3", label: "Carbs" },
-    //     { value: fat, color: "#FFE066", label: "Fat" },
-    // ];
-
     return (
         <View>
             <PieChart
                 donut
-                radius={60}
-                innerRadius={50}
+                radius={80}
+                innerRadius={60}
                 data={nutritionData}
                 centerLabelComponent={() => (
                     <View className="items-center gap-1">
