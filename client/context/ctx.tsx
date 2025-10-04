@@ -35,6 +35,7 @@ export function SessionProvider({ children }: PropsWithChildren) {
                     setSession(token);
                 },
                 signOut: () => {
+                    console.log('signing out');
                     setSession(null);
                 },
                 session,

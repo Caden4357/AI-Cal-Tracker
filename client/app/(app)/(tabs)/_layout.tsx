@@ -11,12 +11,25 @@ const TabLayout = () => {
 				screenOptions={{
 					headerShown: false,
 					tabBarStyle: {
-						// height: 60,
+						height: 80,
 						elevation: 0,
-						backgroundColor: "#f9f9f9",
-						// borderWidth:2,
+						backgroundColor: "#ffedd5",
 						borderTopWidth: 0,
-						// paddingTop:8
+						borderBottomColor: "#ffffff",
+						borderBottomWidth: 1,
+						paddingTop: 8,
+						paddingBottom: 8,
+						paddingHorizontal: 16,
+					},
+					tabBarLabelStyle: {
+						fontSize: 12,
+						fontWeight: "600",
+						marginTop: 4,
+					},
+					tabBarActiveTintColor: "#e8a87c",
+					tabBarInactiveTintColor: "#6B7280",
+					tabBarIconStyle: {
+						marginTop: 4,
 					},
 				}}
 			>
@@ -25,31 +38,43 @@ const TabLayout = () => {
 					options={{
 						headerShown: false,
 						title: "Home",
-						tabBarIcon: ({ color }) => (
-							<AntDesign name="home" size={24} color={"black"} />
+						tabBarIcon: ({ color, focused }) => (
+							<AntDesign 
+								name="home" 
+								size={24} 
+								color='#e8a87c' 
+							/>
 						),
 					}}
 				/>
-				{/* <Tabs.Screen
-				name="camera"
-				options={{
-					headerShown: false,
-					title: "Camera",
-					tabBarIcon: ({ color }) => (
-						<AntDesign name="camera" size={24} color={"black"} />
-					),
-				}}
-			/>
-			<Tabs.Screen
-				name="profile"
-				options={{
-					headerShown: false,
-					title: "Profile",
-					tabBarIcon: ({ color }) => (
-						<AntDesign name="user" size={24} color={"black"} />
-					),
-				}}
-			/> */}
+				<Tabs.Screen
+					name="camera"
+					options={{
+						headerShown: false,
+						title: "Camera",
+						tabBarIcon: ({ color, focused }) => (
+							<AntDesign 
+								name="camera" 
+								size={24} 
+								color='#e8a87c' 
+							/>
+						),
+					}}
+				/>
+				<Tabs.Screen
+					name="profile"
+					options={{
+						headerShown: false,
+						title: "Profile",
+						tabBarIcon: ({ color, focused }) => (
+							<AntDesign 
+								name="user" 
+								size={24} 
+								color='#e8a87c' 
+							/>
+						),
+					}}
+				/>
 			</Tabs>
 		</SafeAreaView>
 	);
