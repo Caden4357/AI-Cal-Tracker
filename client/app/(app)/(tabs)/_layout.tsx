@@ -27,7 +27,7 @@ const TabLayout = () => {
 						marginTop: 4,
 					},
 					tabBarActiveTintColor: "#e8a87c",
-					tabBarInactiveTintColor: "#6B7280",
+					tabBarInactiveTintColor: "#b4b4b4",
 					tabBarIconStyle: {
 						marginTop: 4,
 					},
