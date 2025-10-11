@@ -9,7 +9,7 @@ export default function Index() {
     const colorScheme = useColorScheme();
     return (
         <ScrollView>
-            <View className='flex-1 px-4 bg-transparent'>
+            <View className='flex-1 px-4 bg-transparent dark:bg-zinc-700'>
                 <StatusBar style="dark" />
                 <View className='bg-white rounded-2xl p-4'>
                     <Header />
